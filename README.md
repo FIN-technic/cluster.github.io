@@ -1,4 +1,3 @@
-<!doctype html>
 <html lang="ru">
 <head>
     <meta charset="UTF-8">
@@ -45,7 +44,7 @@
 </head>
 <body>
     <div id="main">
-        <h1>Необходимо ввести строку в поле</h1>
+        <h3>Необходимо ввести строку в поле</h3>
         <form>
             <textarea placeholder="Вставите строку" cols="30" rows="15" id="text_cluster"></textarea><br><br>
             <div id="error"></div>
