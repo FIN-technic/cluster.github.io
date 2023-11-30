@@ -12,24 +12,20 @@
             padding: 0;
             box-sizing: border-box;
         }
-
         body {
             font-weight: 200;
             color: var(--tg-theme-text-color);
             background: var(--tg-theme-bg-color);
         }
-
         #main {
             width: 100%;
             padding: 2%;
             text-align: center;
         }
-
         h3 {
             margin-top: 10px;
             margin-bottom: 10px;
         }
-
         button {
             border: 0;
             border-radius: 5px;
@@ -42,7 +38,6 @@
             color: var(--tg-theme-button-color);
             background: var(--tg-theme-button-text-color);
         }
-
         button:hover {
             background: var(--tg-theme-secondary-bg-color);
         }
@@ -51,7 +46,6 @@
 <body>
     <div id="main">
         <h3>Необходимо ввести строку в поле</h3>
-
         <form>
             <textarea placeholder="Вставите строку" cols="30" rows="15" id="text_cluster"></textarea><br><br>
             <div id="error"></div>
@@ -63,7 +57,6 @@
         let tg = window.Telegram.WebApp;
         let send = document.getElementById("send");
         tg.expand();
-
         send.addEventListener("click", () => {
             document.getElementById("error").innerText = '';
             let text = document.getElementById("text_cluster").value;
@@ -77,12 +70,10 @@
                 document.getElementById("error").innerText = 'Не верная строка в конце';
                 return;
             }
-
             let data = {
                 text: text
             }
             tg.sendData(JSON.stringify(data));
-
             tg.close();
         });
     </script>
