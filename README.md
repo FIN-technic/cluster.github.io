@@ -8,10 +8,10 @@
 </head>
 <body>
     <div id="main">
-        <h1>Необходимо ввести строку в поле</h1>
+        <h1>Необходимо вставить строку в поле</h1>
 
         <form>
-            <textarea placeholder="введите строку" cols="20" rows="10" id="text_cluster"></textarea><br><br>
+            <textarea placeholder="Вставьте строку" cols="20" rows="10" id="text_cluster"></textarea><br><br>
 
             <button id="send">Отправить</button>
         </form>
