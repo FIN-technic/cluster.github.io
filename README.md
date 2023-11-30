@@ -1,4 +1,4 @@
-<html lang="ru-RU">
+<html lang="ru">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport"
@@ -7,7 +7,15 @@
     <title>Кластеры WB</title>
 </head>
 <body>
-    <div>Тестовая страница</div>
+    <div id="main">
+        <h1>Необходимо ввести строку в поле</h1>
+
+        <form>
+            <textarea placeholder="введите строку" cols="100" rows="50" id="text_cluster"></textarea><br><br>
+
+            <button id="send">Отправить</button>
+        </form>
+    </div>
 
 </body>
 </html>
