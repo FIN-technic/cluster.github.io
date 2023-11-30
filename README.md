@@ -1,5 +1,3 @@
-# cluster.github.io
-<!doctype html>
 <html lang="ru-RU">
 <head>
     <meta charset="UTF-8">
