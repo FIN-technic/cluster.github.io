@@ -51,7 +51,7 @@
     <div id="main">
         <h3>Необходимо ввести строку в поле</h3>
         <form>
-            <textarea placeholder="Вставите строку" cols="30" rows="15" id="text_cluster"></textarea><br><br>
+            <textarea placeholder="Вставите строку 1" cols="30" rows="15" id="text_cluster"></textarea><br><br>
             <div id="error"></div>
             <div id="process"></div>
             <button id="send">Отправить</button>
