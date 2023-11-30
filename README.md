@@ -11,25 +11,29 @@
             padding: 0;
             box-sizing: border-box;
         }
+
         body {
             font-weight: 200;
             color: var(--tg-theme-text-color);
             background: var(--tg-theme-bg-color);
         }
+
         #main {
             width: 100%;
             padding: 2%;
             text-align: center;
         }
+
         h3 {
             margin-top: 10px;
             margin-bottom: 10px;
         }
+
         button {
             border: 0;
             border-radius: 5px;
-            margin-top: 20px;
-            height: 60px;
+            margin-top: 10px;
+            height: 50px;
             width: 120px;
             font-size: 20px;
             cursor: pointer;
@@ -37,6 +41,7 @@
             color: var(--tg-theme-button-color);
             background: var(--tg-theme-button-text-color);
         }
+
         button:hover {
             background: var(--tg-theme-secondary-bg-color);
         }
@@ -48,6 +53,7 @@
         <form>
             <textarea placeholder="Вставите строку" cols="30" rows="15" id="text_cluster"></textarea><br><br>
             <div id="error"></div>
+            <div id="process"></div>
             <button id="send">Отправить</button>
         </form>
     </div>
@@ -69,10 +75,13 @@
                 document.getElementById("error").innerText = 'Не верная строка в конце';
                 return;
             }
+
             let data = {
                 text: text
             }
+            document.getElementById("process").innerText = 'Let data';
             tg.sendData(JSON.stringify(data));
+            document.getElementById("process").innerText = 'sendData';
             tg.close();
         });
     </script>
