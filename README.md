@@ -45,7 +45,7 @@
 </head>
 <body>
     <div id="main">
-        <h3>Необходимо ввести строку в поле</h3>
+        <h1>Необходимо ввести строку в поле</h1>
         <form>
             <textarea placeholder="Вставите строку" cols="30" rows="15" id="text_cluster"></textarea><br><br>
             <div id="error"></div>
