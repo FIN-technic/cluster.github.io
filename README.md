@@ -11,7 +11,7 @@
         <h1>Необходимо вставить строку в поле</h1>
 
         <form>
-            <textarea placeholder="Вставьте строку" cols="25" rows="15" id="text_cluster"></textarea><br><br>
+            <textarea placeholder="Вставьте строку" cols="30" rows="15" id="text_cluster"></textarea><br><br>
 
             <button id="send">Отправить</button>
         </form>
